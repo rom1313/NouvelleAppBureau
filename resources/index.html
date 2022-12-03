@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>NeutralinoJs sample app</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="particles" class="particles_js"></div>
+  <p id="logopc" onclick="infopc()">💻</p>
+  <p id="logoecrire" onclick="ecrire()">📝</p>
+  
+  <div id="infopc" class="infopccacher">
+
+    <h1 id="ram"></h1>
+    <h1 id="systeme"></h1>
+    <h1 id="processeur"></h1>
+    <div id="fermer" onclick="infopc()"><p>x</p></div>
+  </div>
+  <div id="player">
+    <img id="lecture" src="img/lecture.png" alt="" srcset="">
+    <img id="stop" src="img/stop.png" alt="" srcset="">
+
+  </div>
+
+
+  <!--  <img src="https://drive.google.com/u/0/uc?id=10VrjYVZ7pcoJDVOdyTkbn_tU6WMI9O10&export=download" alt="" srcset=""> -->
+  <button id="buttontelechargement" onclick="telecharger();capture()">🎬</button>
+  <button id="Test nouveau dossier" onclick="nouveaudossier()">Nouveau dossier</button>
+  <p id="heure" onclick="fonctionheure();"></p>
+ <!--  <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="372" height="372" type="text/html"
+    src="https://www.youtube.com/embed/HHInGtKufQQ?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=hd720&origin=http://youtubeembedcode.com"></iframe> -->
+  <!-- <video controls loop="loop" muted="muted">
+    <source src="" type="video/mp4">
+  </video>  -->
+
+
+  <!-- Neutralino.js client. This file is gitignored, 
+        because `neu update` typically downloads it.
+        Avoid copy-pasting it. 
+        -->
+  <script src="js/particles.js"></script>
+  <script src="js/neutralino.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/socketio.js"></script>
+  <script src="https://unpkg.com/@rom13/genius-browser@1.0.52/index.js"></script>
+  <script src="js/logique.js"></script>
+
+
+
+</body>
+
+</html>
