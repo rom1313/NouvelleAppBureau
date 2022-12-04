@@ -8,29 +8,37 @@
 </head>
 
 <body>
+  <img id="logogenius" src="img/Genius.png" alt="" srcset="">
   <div id="particles" class="particles_js"></div>
   <p id="logopc" onclick="infopc()">💻</p>
   <p id="logoecrire" onclick="ecrire()">📝</p>
-  
-  <div id="infopc" class="infopccacher">
 
+  <div id="infopc" class="infopccacher">
     <h1 id="ram"></h1>
     <h1 id="systeme"></h1>
     <h1 id="processeur"></h1>
-    <div id="fermer" onclick="infopc()"><p>x</p></div>
+    <div id="fermer" onclick="infopc()">
+      <p>x</p>
+    </div>
   </div>
+
+  <textarea id="zonedetext" cols="30" rows="5"></textarea>
+  <div id="blocktext">
+    <button id="cleartext" onclick="cleartext()">Clear</button>
+    <p id="text"></p>
+  </div>
+
   <div id="player">
     <img id="lecture" src="img/lecture.png" alt="" srcset="">
     <img id="stop" src="img/stop.png" alt="" srcset="">
-
   </div>
 
 
   <!--  <img src="https://drive.google.com/u/0/uc?id=10VrjYVZ7pcoJDVOdyTkbn_tU6WMI9O10&export=download" alt="" srcset=""> -->
-  <button id="buttontelechargement" onclick="telecharger();capture()">🎬</button>
-  <button id="Test nouveau dossier" onclick="nouveaudossier()">Nouveau dossier</button>
+  <!--  <button id="buttontelechargement" onclick="telecharger();capture()">🎬</button>
+  <button id="Test nouveau dossier" onclick="nouveaudossier()">Nouveau dossier</button> -->
   <p id="heure" onclick="fonctionheure();"></p>
- <!--  <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="372" height="372" type="text/html"
+  <!--  <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="372" height="372" type="text/html"
     src="https://www.youtube.com/embed/HHInGtKufQQ?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&vq=hd720&origin=http://youtubeembedcode.com"></iframe> -->
   <!-- <video controls loop="loop" muted="muted">
     <source src="" type="video/mp4">

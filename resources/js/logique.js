@@ -1,23 +1,45 @@
-
+//TODO ----------------------------------------------
+//TODO ------- IMPORTS ET DECLARATION -----
+//TODO ----------------------------------------------
 const genius = $
 let heure;
 let heuretext = document.querySelector("#heure")
 const socket = io("http://localhost:13000");
+
+//TODO ----------------------------------------------
+//TODO ------- EVENTS SOCKET-----
+//TODO ----------------------------------------------
+
 socket.on('connexion', function (data) {
     document.querySelector("#ram").textContent = `${data.ram}`
     document.querySelector("#processeur").textContent = `${data.processeur}`
     document.querySelector("#systeme").textContent = `${data.systeme}`
-    console.log(data);
-
 })
 
+//TODO ----------------------------------------------
+//TODO ------- EVENTS -----
+//TODO ----------------------------------------------
+
+//TODO ------- Event Onload -----
 window.onload = () => {
     particlesJS.load('particles', 'json.json')
+}
+genius.event("#zonedetext", "keyup", (e) => {
+    genius.textContent(e.target.value, "#text")
+})
+//TODO ----------------------------------------------
+//TODO ------- FONCTIONS -----
+//TODO ----------------------------------------------
 
+//TODO ------- Fonction Info du PC -----
+function infopc() {
+    document.querySelector("#infopc").classList.toggle("infopccacher");
 }
 
-function infopc(){
-document.querySelector("#infopc").classList.toggle("infopccacher");
+function cleartext() {
+    genius.textContent('', "#text")
+    document.querySelector("#zonedetext").value = ''
+
 }
 
 
@@ -47,7 +69,7 @@ function nouveaudossier(params) {
 
 }
 
-let html = document.querySelector("html")
+
 
 
 
