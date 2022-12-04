@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "font";
+    src: url('fonts/PantonDemo-Black.otf');
+    font-display: fallback;
+}
 html {
     background-color: rgb(66, 66, 66);
     margin: 0;
@@ -11,6 +16,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
+    
     /*  pointer-events: none; */
 }
 

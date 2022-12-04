@@ -24,7 +24,10 @@ socket.on('connexion', function (data) {
 window.onload = () => {
     particlesJS.load('particles', 'json.json')
 }
-genius.event("#zonedetext", "keyup", (e) => {
+genius.event("#zonedetext", "input", (e) => {
+    let text = e.target.value
+    console.log(text);
+    console.log(e.target.value);
     genius.textContent(e.target.value, "#text")
 })
 //TODO ----------------------------------------------
@@ -40,6 +43,19 @@ function cleartext() {
     genius.textContent('', "#text")
     document.querySelector("#zonedetext").value = ''
 
+}
+
+function creertext() {
+
+    let text = document.querySelector("#zonedetext").value
+
+    const doc = new jsPDF();
+
+    doc.text("Hello world!", 10, 10);
+    doc.save("a4.pdf");
+    /* .download(`Mon texte.pdf`) */
+    /*  pdfMake.createPdf(pdf).download(`Mon texte.pdf`) */
+    /*  Neutralino.filesystem.writeFile('./Mon Texte.txt', text); */
 }
 
 
