@@ -6,8 +6,10 @@ function fermetureApplication() {
     Neutralino.app.exit();
 }
 Neutralino.events.on("windowClose", fermetureApplication);
+
 //TODO ------- Lancement de l'appli -----
-Neutralino.os.execCommand('node server.js', { background: true });
+
+//TODO ------- Ouvrir une nouvelle fenetre -----
 /* Neutralino.window.create('https://www.youtube.com'), {
     icon: '/resources/icons/aboutIcon.png',
     enableInspector: false,
@@ -17,17 +19,12 @@ Neutralino.os.execCommand('node server.js', { background: true });
     exitProcessOnClose: true,
 
 } */
-Neutralino.init();
-//TODO ------- Notification d'appli -----
-
+//TODO ------- Fonction afficher notification -----
+/* Neutralino.os.showNotification('Hello world', 'It works! Have a nice day'); */
 //TODO ------- Lancement du server node -----
-
-
-/*  */
-
+Neutralino.os.execCommand('node server.js', { background: true });
+Neutralino.init();
 
 
 
 
-/* Neutralino.os.showNotification('Hello world', 'It works! Have a nice day');
- Neutralino.os.showNotification('Oops :/', 'Something went wrong', 'ERROR'); */

@@ -13,7 +13,7 @@
   <p id="logopc" onclick="infopc()">💻</p>
   <p id="logoecrire" onclick="ecrire()">📝</p>
 
-  <div id="infopc" class="infopccacher">
+  <div id="infopc" class="cacher">
     <h1 id="ram"></h1>
     <h1 id="systeme"></h1>
     <h1 id="processeur"></h1>
@@ -22,10 +22,12 @@
     </div>
   </div>
 
-  <textarea id="zonedetext" cols="30" rows="5"></textarea>
-  <div id="blocktext">
+  <textarea id="zonedetext" class="cacher" cols="30" rows="5"></textarea>
+  <div id="blocktext" class="cacher">
     <button id="cleartext" onclick="cleartext()">Clear</button>
     <!-- <button id="creertext" onclick="creertext()">Text</button> -->
+    <button id="grandirtext" onmousedown="grandirtext()">+</button>
+    <button id="reduiretext" onmousedown="reduiretext()">-</button>
     <p id="text"></p>
   </div>
 
@@ -45,24 +47,12 @@
     <source src="" type="video/mp4">
   </video>  -->
 
-
-  <!-- Neutralino.js client. This file is gitignored, 
-        because `neu update` typically downloads it.
-        Avoid copy-pasting it. 
-        -->
-
-
-  <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
-
   <script src="js/particles.js"></script>
   <script src="js/neutralino.js"></script>
   <script src="js/main.js"></script>
   <script src="js/socketio.js"></script>
   <script src="https://unpkg.com/@rom13/genius-browser@1.0.52/index.js"></script>
   <script src="js/logique.js"></script>
-
-
-
 </body>
 
 </html>

@@ -3,6 +3,7 @@
     src: url('fonts/PantonDemo-Black.otf');
     font-display: fallback;
 }
+
 html {
     background-color: rgb(66, 66, 66);
     margin: 0;
@@ -16,7 +17,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
-    
+
     /*  pointer-events: none; */
 }
 
@@ -76,22 +77,39 @@ body {
     font-size: 1.5vw;
     white-space: pre-line;
     color: antiquewhite;
-    text-shadow: 0px 0px 10px rgb(255, 0, 255), 0px 0px 25px black ;
+    text-shadow: 0px 0px 10px rgb(255, 0, 255), 0px 0px 25px black;
 }
 
 img {
     width: 15px;
 
 }
-#cleartext{
+
+#cleartext {
     position: absolute;
     left: 45px;
     bottom: 0px;
     transform: translate(-50%, -50%);
-    border-radius: 2px;
-    box-shadow: 0px 0px 5px violet;
     padding: 0;
 }
+
+#grandirtext {
+    position: absolute;
+    left: 75px;
+    bottom: 0px;
+    transform: translate(-50%, -50%);
+    padding: 0;
+}
+
+#reduiretext {
+    position: absolute;
+    left: 95px;
+    bottom: 0px;
+    transform: translate(-50%, -50%);
+    padding: 0;
+}
+
+
 
 #player {
     position: absolute;
@@ -115,7 +133,8 @@ button {
     cursor: pointer;
     background-color: black;
     color: rgb(200, 25, 235);
-    border-radius: 15px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px violet;
 }
 
 video {
@@ -233,7 +252,7 @@ iframe {
     pointer-events: none;
 }
 
-.infopccacher {
+.cacher {
     display: none;
-    color: aqua
+
 }
