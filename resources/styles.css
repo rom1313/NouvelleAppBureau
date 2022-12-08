@@ -109,6 +109,28 @@ img {
     padding: 0;
 }
 
+#textenregistrer {
+    background-color: burlywood;
+    position: absolute;
+    left: 68%;
+    bottom: -5px;
+    transform: translate(-50%, -50%);
+   display: flex;
+   flex-direction: row;
+   text-align: center;
+    width: 55%;
+    padding: 0px;
+    margin: 0px;
+    height: fit-content;
+   
+   
+}
+#textenregistrer>p{
+   margin: 5px;
+   padding: 0px;
+   background-color: blueviolet;
+}
+
 
 
 #player {

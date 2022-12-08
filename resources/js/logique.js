@@ -25,9 +25,7 @@ window.onload = () => {
     particlesJS.load('particles', 'json.json')
 }
 genius.event("#zonedetext", "input", (e) => {
-    let text = e.target.value
-    console.log(text);
-    console.log(e.target.value);
+ 
     genius.textContent(e.target.value, "#text")
 })
 //TODO ----------------------------------------------
@@ -38,7 +36,7 @@ genius.event("#zonedetext", "input", (e) => {
 function infopc() {
     if ((document.querySelector("#blocktext").className = "cacher")
         && (document.querySelector("#zonedetext").className = "cacher")) {
-        
+
     }
     else {
         document.querySelector("#zonedetext").className = "cacher"
@@ -51,7 +49,7 @@ function infopc() {
 function ecrire() {
 
     if (document.querySelector("#infopc").className = "cacher") {
-       
+
     }
     else {
         document.querySelector("#infopc").className = "cacher"
@@ -71,20 +69,45 @@ function grandirtext() {
     document.querySelector("#text").style.fontSize = `${fontsizetext}vw`
 
 }
-//TODO ------- Fonction afficher Info du PC -----
+//TODO ------- Fonction reduire le texte -----
 function reduiretext() {
     fontsizetext -= 0.2;
     document.querySelector("#text").style.fontSize = `${fontsizetext}vw`;
 }
-
+//TODO ------- Fonction creer un fichier texte -----
 function creerfichiertext() {
 
     let text = document.querySelector("#zonedetext").value
     /*  Neutralino.filesystem.writeFile('./Mon Texte.txt', text); */
 }
+//TODO ------- Fonction enregistrer text localstorage -----
+function enregistrertext() {
+    console.log(localStorage);
+    localStorage.setItem('Text', `hihihih`);
+    localStorage.setItem('Text2', `yo`);
+    let cookies = localStorage
+    let tabcookie = []
+    for (const [key, value] of Object.entries(cookies)) {
+        console.log(`${key}: ${value}`);
+        tabcookie.push([key, value])
+    }
+    console.log(tabcookie);
+    tabcookie.forEach(element => {
+       let nom = document.createElement("p")
+       nom.textContent = element[0]
+       document.querySelector("#textenregistrer").appendChild(nom) 
+       console.log(element[0]);
+    });
+    console.log(document.querySelector("#textenregistrer"));
 
+    /*   console.log(tabcookie.filter(element => element.nom = 'Thème')); */
+
+}
+
+/* localStorage.setItem('Thème', 'Claire'); */
+localStorage.clear()
 //TODO ------- Fonction heure dynamique -----
- 
+
 //on créer la fonction 
 function heureDynamique() {
     genius.textContent(genius.heure(), '#heure')
@@ -92,7 +115,7 @@ function heureDynamique() {
 }
 
 //on appel "l'animation"
-requestAnimationFrame(heureDynamique) 
+requestAnimationFrame(heureDynamique)
 //TODO ------- Fonction telechargement -----
 function telecharger() {
     document.location = "http://localhost:12000/test.html"
@@ -113,9 +136,9 @@ function nouveaudossier(params) {
 
 }
 
-
-function test(){
-console.log("rfff");
+//TODO ------- Fonction TESTS -----
+function test() {
+    console.log("rfff");
 }
 
 
