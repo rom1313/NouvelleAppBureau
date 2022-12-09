@@ -10,27 +10,25 @@
 <body>
   <img id="logogenius" src="img/Genius.png" alt="" srcset="">
   <div id="particles" class="particles_js"></div>
-  <p id="logopc" onclick="infopc()">💻</p>
-  <p id="logoecrire" onclick="ecrire()">📝</p>
+  <p id="logopc" onclick="">💻</p>
+  <p id="logoecrire" onclick="">📝</p>
 
   <div id="infopc" class="cacher">
     <h1 id="ram"></h1>
     <h1 id="systeme"></h1>
     <h1 id="processeur"></h1>
-    <div id="fermer" onclick="infopc()">
-      <p>x</p>
-    </div>
+  
   </div>
 
   <textarea id="zonedetext" class="cacher" cols="30" rows="5"></textarea>
-  
+
   <div id="blocktext" class="cacher">
     <div id="textenregistrer"></div>
-    <button id="cleartext" onclick="cleartext()">Clear</button>
+    <button id="cleartext" onclick="">Clear</button>
     <!-- <button id="creertext" onclick="creertext()">Text</button> -->
-    <button id="grandirtext" onmousedown="grandirtext()">+</button>
-    <button id="reduiretext" onmousedown="reduiretext()">-</button>
-    <button id="enregistrertext" onmousedown="enregistrertext()">save</button>
+    <button id="grandirtext" onmousedown="">+</button>
+    <button id="reduiretext" onmousedown="">-</button>
+    <button id="enregistrertext" onmousedown="">save</button>
     <p id="text"></p>
   </div>
 
@@ -52,10 +50,10 @@
 
   <script src="js/particles.js"></script>
   <script src="js/neutralino.js"></script>
-  <script src="js/main.js"></script>
   <script src="js/socketio.js"></script>
   <script src="https://unpkg.com/@rom13/genius-browser@1.0.52/index.js"></script>
-  <script src="js/logique.js"></script>
+  <script nomodule type="module" src="js/main.js"></script>
+  <script nommodule type="module" src="js/logique.js"></script>
 </body>
 
 </html>

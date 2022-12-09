@@ -1,5 +1,5 @@
-//TODO ------- right click false -----
-oncontextmenu = () => { return false }
+
+
 //TODO ------- Event Fermeture de l'appli ----
 function fermetureApplication() {
     socket.emit('disconnect')
