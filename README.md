@@ -1,17 +1,11 @@
-# neutralinojs-minimal
+# Genius Station
 
-The default template for a Neutralinojs app. It's possible to use your favorite frontend framework by using [these steps](https://neutralino.js.org/docs/how-to/use-a-frontend-library).
+Une application PC utilitaire
 
-## Contributors
+## Auteur
 
 <a href="https://github.com/neutralinojs/neutralinojs-minimal/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=neutralinojs/neutralinojs-minimal" />
+  <img src="https://avatars.githubusercontent.com/u/76427184?s=400&u=f0803254d79376b2be4f172d372d88e94011fe56&v=4" />
 </a>
 
-## License
 
-[MIT](LICENSE)
-
-## Icon credits
-
-- `trayIcon.png` - Made by [Freepik](https://www.freepik.com) and downloaded from [Flaticon](https://www.flaticon.com)
